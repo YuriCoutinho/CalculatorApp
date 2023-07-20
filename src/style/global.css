@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+
+    /* Color Variables */
+    --bg-color-dark: #17181A;
+    --bg-color-light: #F7F8FB;
+  
+    /* Primary Colors [ Blue ] */
+    --primary-lightest: #ADE2FF;
+    --primary-light: #29A8FF;
+    --primary-main: #109DFF;
+    --primary-dark: #005DB2;
+  
+    /* Neutral Colors [ Gray ] */
+    --neutral-light: #A5A5A5;
+    --neutral-main: #616161;
+    --neutral-dark: #424242;
+    --neutral-darkest: #303136;
+
+    --white: #FFFFFF;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Utility Classes */
+.color-primary-light{
+    color: var(--primary-light)
+}
+

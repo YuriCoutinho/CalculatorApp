@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.calculator-screen {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  background: black;
+  padding: 4rem 3.4rem;
+}
+
+.calculator-operation {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.calculator-operation .calculator-operation__expression {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: var(--neutral-main);
+  margin-bottom: 12px;
+}
+
+.calculator-operation .calculator-operation__result {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.keyboard {
+  grid-row: 4 / 7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.keyboard-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 6px 4px;
+    border-radius: 16px;
+}
+
+.keyboard .keyboard__utility {
+    background-color: var(--neutral-main);
+    color: var(--neutral-light);
+}
+
+.keyboard .keyboard__operator {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+.keyboard-numbers {
+  grid-row: 2/6;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.keyboard-numbers .keyboard-numbers__number {
+  background: var(--neutral-darkest);
+  color: var(--primary-light);
+}
+
+#assignment-operator {
+    grid-row: 4/6;
+}
+
+.dot {
+  grid-column: 2/4;
+}
+
